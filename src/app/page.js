@@ -1,6 +1,11 @@
-const page = () => {
-  return <div className="text-blue-600 uppercase text-2xl">page</div>;
-};
+import Feed from "@/components/Feed";
 
-export default page;
- 
+export const dynamic = "force-dynamic";
+
+export default function Home() {
+  return (
+    <>
+      <Feed />
+    </>
+  );
+}
